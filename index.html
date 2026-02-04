@@ -3,166 +3,251 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Bloom</title>
-    <meta name="description" content="A calm, modern landing page template." />
+    <title>NovaLab — Multimedia Marketing & Project Leader</title>
+    <meta name="description" content="Premium, futuristic, and playful portfolio of a Multimedia Marketing & Project Leader. Video, design, strategy—brought to life with motion and interactivity." />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="page-shell">
-      <header class="container nav">
+    <div class="page-shell" id="top">
+      <header class="site-header container" aria-label="Primary">
         <a class="brand" href="#top" aria-label="Home">
-          <span class="brand-mark"></span>
-          Bloom
+          <span class="logo-orb" aria-hidden="true"></span>
+          <strong>NovaLab</strong>
         </a>
-        <nav class="nav-links">
-          <a href="#features">Features</a>
-          <a href="#story">Story</a>
-          <a href="#cta">Pricing</a>
+        <nav class="nav" aria-label="Section navigation">
+          <button class="hamburger" aria-expanded="false" aria-controls="navmenu" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+          </button>
+          <ul id="navmenu" class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a class="pill small" href="#contact">Book a Creative Brief</a></li>
+          </ul>
         </nav>
-        <div class="nav-actions">
-          <a class="ghost" href="#features">Explore</a>
-          <a class="pill" href="#cta">Start free</a>
-        </div>
       </header>
 
-      <main id="top" class="container">
-        <section class="hero">
+      <main>
+        <!-- Hero -->
+        <section class="hero container" aria-labelledby="hero-title">
+          <canvas id="hero-canvas" aria-hidden="true"></canvas>
           <div class="hero-copy">
-            <div class="badge">Fresh drop · crafted for clarity</div>
-            <h1>Build a landing page people fall in love with.</h1>
-            <p class="lede">
-              A light, airy one-page template with room to tell your story, highlight what
-              matters, and guide visitors toward a single, confident action.
-            </p>
-            <div class="hero-actions">
-              <a class="pill" href="#cta">Launch in minutes</a>
-              <a class="ghost" href="#features">See what’s inside</a>
+            <h1 id="hero-title">Multimedia Marketing & Project Leader</h1>
+            <p class="lede">I lead multidisciplinary teams to ship standout campaigns across video, design, and interactive media—crafting stories that move brands forward.</p>
+            <div class="hero-cta">
+              <a class="pill" href="#contact">Book a Creative Brief</a>
+              <a class="ghost" href="#projects">See case studies</a>
             </div>
-            <ul class="highlights">
-              <li>Responsive out of the box</li>
-              <li>Typography that stays calm under pressure</li>
-              <li>No build tools—just edit and ship</li>
+            <ul class="hero-stats" aria-label="Highlights">
+              <li><span class="num" data-count="120">0</span>+ projects delivered</li>
+              <li><span class="num" data-count="25">0</span> teams led</li>
+              <li><span class="num" data-count="18">0</span>M views across launches</li>
             </ul>
           </div>
-          <div class="hero-visual">
-            <div class="glass-card">
-              <p class="eyebrow">Live preview</p>
-              <h3>Less noise, more delight.</h3>
-              <p>
-                Swap copy, adjust colors, and keep the structure. This is your canvas for a
-                graceful announcement, product launch, or portfolio piece.
-              </p>
-              <div class="stat-row">
-                <div>
-                  <div class="stat-number">98%</div>
-                  <small>Happier first impressions</small>
-                </div>
-                <div>
-                  <div class="stat-number">5 min</div>
-                  <small>From clone to live</small>
-                </div>
-              </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <div class="orbital">
+              <div class="core-orb"></div>
+              <ul class="orbit" id="keywordOrbit">
+                <li>Video</li>
+                <li>UX</li>
+                <li>Strategy</li>
+                <li>Brand</li>
+                <li>Motion</li>
+                <li>3D</li>
+              </ul>
             </div>
           </div>
         </section>
 
-        <section id="features" class="section">
-          <div class="section-head">
-            <p class="eyebrow">What’s included</p>
-            <h2>Elegant defaults you can trust.</h2>
-            <p class="muted">
-              Clean spacing, balanced colors, and thoughtful microcopy—so you can focus on
-              your product instead of pixels.
-            </p>
+        <!-- About -->
+        <section id="about" class="section container split" aria-labelledby="about-title">
+          <div>
+            <h2 id="about-title">About / Persona</h2>
+            <p class="muted">Over 8+ years orchestrating creative teams across tech, entertainment, and retail. I translate business goals into cinematic stories—aligning designers, editors, and producers with clear roadmaps.</p>
+            <ul class="about-list">
+              <li>
+                <span class="stat" data-count="8">0</span>
+                <small>years in leadership</small>
+              </li>
+              <li>
+                <span class="stat" data-count="36">0</span>
+                <small>campaigns launched</small>
+              </li>
+              <li>
+                <span class="stat" data-count="7">0</span>
+                <small>industries served</small>
+              </li>
+            </ul>
           </div>
-          <div class="grid">
-            <article class="feature-card">
-              <div class="icon">✨</div>
-              <h3>Light aesthetic</h3>
-              <p>Soft gradients, airy whitespace, and friendly typography guide the eye.</p>
+          <div class="about-visual">
+            <div class="blob" aria-hidden="true"></div>
+          </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="section container" aria-labelledby="skills-title">
+          <header class="section-head">
+            <p class="eyebrow">Toolkit</p>
+            <h2 id="skills-title">Interactive skill map</h2>
+            <p class="muted">Hover or tap nodes to reveal specialties and go-to tools.</p>
+          </header>
+          <div class="skill-map" id="skillMap" role="list">
+            <button class="node" data-label="Video Production" data-tools="Directing, Editing, Color, SFX">🎬</button>
+            <button class="node" data-label="Brand Systems" data-tools="Identity, Type, Guidelines">🔤</button>
+            <button class="node" data-label="Motion" data-tools="After Effects, Lottie, GSAP-lite">✨</button>
+            <button class="node" data-label="Campaign Planning" data-tools="Briefs, Calendars, Budgets">🗺️</button>
+            <button class="node" data-label="Analytics" data-tools="Attribution, A/B, KPI Dashboards">📈</button>
+          </div>
+          <div class="node-tooltip" id="nodeTip" role="status" aria-live="polite"></div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="section container" aria-labelledby="projects-title">
+          <header class="section-head">
+            <p class="eyebrow">Work</p>
+            <h2 id="projects-title">Highlighted projects</h2>
+            <p class="muted">Bouncy, scroll-revealed cards with subtle 3D tilt.</p>
+          </header>
+          <div class="project-grid">
+            <article class="project-card tilt" tabindex="0">
+              <div class="project-thumb gradient-a"></div>
+              <h3>Neon Product Launch</h3>
+              <p>Multi-format campaign across video + social. Result: +240% signups.</p>
+              <div class="meta">Campaign · 2025</div>
             </article>
-            <article class="feature-card">
-              <div class="icon">⚡️</div>
-              <h3>Fast by default</h3>
-              <p>Zero build tools or dependencies—just static files ready for any host.</p>
+            <article class="project-card tilt" tabindex="0">
+              <div class="project-thumb gradient-b"></div>
+              <h3>Brand System Refresh</h3>
+              <p>Unified identity and motion kit. Result: 30% faster content velocity.</p>
+              <div class="meta">Brand · 2024</div>
             </article>
-            <article class="feature-card">
-              <div class="icon">📱</div>
-              <h3>Responsive</h3>
-              <p>Layouts adapt fluidly across breakpoints without extra work.</p>
+            <article class="project-card tilt" tabindex="0">
+              <div class="project-thumb gradient-c"></div>
+              <h3>Interactive Case Film</h3>
+              <p>Immersive microsite + short film. Result: Webby shortlist.</p>
+              <div class="meta">Film · 2023</div>
             </article>
-            <article class="feature-card">
-              <div class="icon">🧭</div>
-              <h3>Clear pathways</h3>
-              <p>Calls-to-action stay visible and consistent from hero to footer.</p>
+            <article class="project-card tilt" tabindex="0">
+              <div class="project-thumb gradient-d"></div>
+              <h3>Data Story Series</h3>
+              <p>Motion-driven explainers for exec comms. Result: +3.1M views.</p>
+              <div class="meta">Motion · 2022</div>
             </article>
           </div>
         </section>
 
-        <section id="story" class="section split">
-          <div class="section-head">
-            <p class="eyebrow">Story</p>
-            <h2>Designed for teams who crave simplicity.</h2>
-            <p class="muted">
-              Whether you’re announcing a launch or collecting signups, Bloom keeps things
-              poised and purposeful. Swap in your copy, drop in a few visuals, and you’re ready.
-            </p>
-          </div>
-          <div class="list-card">
-            <div class="list-row">
-              <div class="dot"></div>
-              <div>
-                <h4>Built to feel confident</h4>
-                <p>Every section reinforces a single outcome. Nothing extra, nothing loud.</p>
-              </div>
+        <!-- Process -->
+        <section id="process" class="section container" aria-labelledby="process-title">
+          <header class="section-head">
+            <p class="eyebrow">Method</p>
+            <h2 id="process-title">From discover to launch</h2>
+          </header>
+          <div class="timeline" id="timeline">
+            <div class="phase">
+              <h4>Discover</h4>
+              <p>Brief intake, audience mapping, KPI targets.</p>
             </div>
-            <div class="list-row">
-              <div class="dot"></div>
-              <div>
-                <h4>Guided by calm motion</h4>
-                <p>Subtle transitions add depth without distracting from the message.</p>
-              </div>
+            <div class="phase">
+              <h4>Design</h4>
+              <p>Boards, scripts, and brand alignment.</p>
             </div>
-            <div class="list-row">
-              <div class="dot"></div>
-              <div>
-                <h4>Ready for any brand</h4>
-                <p>Neutral palette and sensible spacing make customization painless.</p>
-              </div>
+            <div class="phase">
+              <h4>Produce</h4>
+              <p>Agile sprints across edit, motion, and build.</p>
             </div>
+            <div class="phase">
+              <h4>Launch</h4>
+              <p>QA, delivery, analytics instrumentation.</p>
+            </div>
+            <div class="progress" id="timelineProgress" aria-hidden="true"></div>
           </div>
         </section>
 
-        <section id="cta" class="section cta">
-          <div class="cta-inner">
-            <div>
-              <p class="eyebrow">Call to action</p>
-              <h2>Fall in love with your launch.</h2>
-              <p class="muted">
-                Ship the most lovable version of your story today. Update the copy, adjust the
-                accent color, and publish—no fuss.
-              </p>
-            </div>
-            <div class="cta-actions">
-              <button class="pill" id="ctaButton" type="button">Make it yours</button>
-              <p class="small" id="ctaResult" aria-live="polite"></p>
-            </div>
+        <!-- Testimonials -->
+        <section id="testimonials" class="section container" aria-labelledby="testimonials-title">
+          <header class="section-head">
+            <p class="eyebrow">Social proof</p>
+            <h2 id="testimonials-title">What partners say</h2>
+          </header>
+          <div class="carousel" id="carousel" aria-roledescription="carousel">
+            <figure class="quote glass">
+              <blockquote>Brings order to creative chaos—and somehow makes it fun.</blockquote>
+              <figcaption>— Creative Director, Tech</figcaption>
+            </figure>
+            <figure class="quote glass">
+              <blockquote>Producer, strategist, and designer in one. A rarity.</blockquote>
+              <figcaption>— VP Brand, Retail</figcaption>
+            </figure>
+            <figure class="quote glass">
+              <blockquote>Our most effective launch to date. Team loved the process.</blockquote>
+              <figcaption>— CMO, SaaS</figcaption>
+            </figure>
           </div>
+        </section>
+
+        <!-- Tools / Lab -->
+        <section class="section container" aria-labelledby="lab-title">
+          <header class="section-head">
+            <p class="eyebrow">Multimedia Lab</p>
+            <h2 id="lab-title">Tools I build with</h2>
+            <p class="muted">Adobe CC, After Effects, Figma, Blender-lite, WebGL-inspired canvas, and fast vanilla JavaScript.</p>
+          </header>
+          <div class="tool-row">
+            <span class="chip">Adobe Suite</span>
+            <span class="chip">After Effects</span>
+            <span class="chip">Figma</span>
+            <span class="chip">Blender</span>
+            <span class="chip">Lottie</span>
+            <span class="chip">Canvas</span>
+          </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section container contact" aria-labelledby="contact-title">
+          <header class="section-head">
+            <p class="eyebrow">Let’s collaborate</p>
+            <h2 id="contact-title">Book a creative brief</h2>
+            <p class="muted">Tell me about your goals. I’ll reply within 24 hours.</p>
+          </header>
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" autocomplete="name" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+            </div>
+            <div class="field full">
+              <label for="message">Project details</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <div class="form-actions">
+              <button class="pill" type="submit">Send</button>
+              <a class="ghost" href="mailto:hello@example.com">Or email directly</a>
+            </div>
+            <p id="formResult" class="small" role="status" aria-live="polite"></p>
+          </form>
         </section>
       </main>
 
-      <footer class="container footer">
-        <small>© <span id="year"></span> Bloom—crafted for clarity.</small>
+      <footer class="site-footer container">
+        <small>© <span id="year"></span> NovaLab • Built with vanilla JS & CSS. </small>
+        <a class="back-to-top" href="#top">Back to top ↑</a>
       </footer>
     </div>
 
     <script src="./script.js" defer></script>
   </body>
 </html>
+
